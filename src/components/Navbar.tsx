@@ -117,12 +117,13 @@ export default function Navbar() {
                       onClick={() => handleSelectProduct(p.id)}
                       className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors"
                     >
-                      <div
-                        className="w-8 h-10 rounded flex-shrink-0 flex items-center justify-center text-white text-[5px] font-bold"
-                        style={{ background: `linear-gradient(135deg, ${p.color}, ${p.color}cc)` }}
-                      >
-                        NE
-                      </div>
+                      <Image
+                        src={p.image}
+                        alt={p.name[lang]}
+                        width={32}
+                        height={40}
+                        className="w-8 h-10 object-contain flex-shrink-0 rounded"
+                      />
                       <div className="min-w-0">
                         <div className="text-white text-sm font-medium truncate">{p.name[lang]}</div>
                         <div className="text-white/40 text-xs truncate">{p.shortBenefit[lang]}</div>
@@ -208,12 +209,13 @@ export default function Navbar() {
                     onClick={() => handleSelectProduct(p.id)}
                     className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors"
                   >
-                    <div
-                      className="w-7 h-9 rounded flex-shrink-0 flex items-center justify-center text-white text-[5px] font-bold"
-                      style={{ background: `linear-gradient(135deg, ${p.color}, ${p.color}cc)` }}
-                    >
-                      NE
-                    </div>
+                    <Image
+                      src={p.image}
+                      alt={p.name[lang]}
+                      width={28}
+                      height={36}
+                      className="w-7 h-9 object-contain flex-shrink-0 rounded"
+                    />
                     <div className="min-w-0">
                       <div className="text-white text-sm font-medium truncate">{p.name[lang]}</div>
                       <div className="text-white/40 text-xs truncate">{p.shortBenefit[lang]}</div>
