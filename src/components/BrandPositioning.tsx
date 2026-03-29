@@ -16,7 +16,7 @@ export default function BrandPositioning() {
   ];
 
   return (
-    <section id="about" className="relative py-24 bg-brand-cream overflow-hidden">
+    <section id="about" className="relative py-24 bg-black overflow-hidden">
       {/* Background product image — right side */}
       <div className="hidden lg:block absolute -right-16 top-0 bottom-0 w-[65%] pointer-events-none">
         <Image
@@ -27,14 +27,16 @@ export default function BrandPositioning() {
           className="object-cover object-center"
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
-        {/* Fade: covers only the left half, from fully opaque to transparent */}
-        <div className="absolute top-0 bottom-0 left-0 w-1/2 bg-gradient-to-r from-brand-cream to-transparent" />
+        {/* Vignette fade around the image — center offset to the right */}
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 70% at 75% 50%, transparent 30%, black 100%)" }} />
+        {/* Fade left edge into background */}
+        <div className="absolute top-0 bottom-0 left-0 w-1/2 bg-gradient-to-r from-black to-transparent" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:max-w-[55%]">
           <div className="mb-12">
-            <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-[#2c2c2c] mb-4 tracking-tight">
+            <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
               {t("brandTitle")}
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-[#fb6a10] to-[#fa8a42] rounded-full" />
@@ -45,7 +47,7 @@ export default function BrandPositioning() {
             {pillars.map((p, i) => (
               <div
                 key={p.title}
-                className={`group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animate-delay-${(i + 1) * 100}`}
+                className={`group relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animate-delay-${(i + 1) * 100}`}
               >
                 <div className="flex items-start gap-5">
                   <div
@@ -55,10 +57,10 @@ export default function BrandPositioning() {
                     <p.icon size={28} style={{ color: p.color }} />
                   </div>
                   <div>
-                    <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-2 tracking-wide">
+                    <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-2 tracking-wide">
                       {p.title}
                     </h3>
-                    <p className="text-[#2c2c2c]/60 leading-relaxed text-sm">{p.desc}</p>
+                    <p className="text-white/60 leading-relaxed text-sm">{p.desc}</p>
                   </div>
                 </div>
                 {/* Left accent */}
