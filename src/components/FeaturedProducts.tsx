@@ -13,10 +13,10 @@ export default function FeaturedProducts() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <section className="py-24 bg-brand-light/30">
+    <section className="py-24 bg-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-[#2c2c2c] mb-3 tracking-tight">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl font-bold text-white mb-3 tracking-tight">
             {t("featuredTitle")}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#fb6a10] to-[#fa8a42] mx-auto rounded-full" />

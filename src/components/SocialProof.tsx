@@ -29,7 +29,7 @@ export default function SocialProof() {
   ];
 
   return (
-    <section className="py-24 bg-[#2c2c2c] relative overflow-hidden">
+    <section className="py-24 bg-[#111111] relative overflow-hidden">
       {/* Decorative */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-[#fb6a10]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#fa8a42]/5 rounded-full blur-3xl" />

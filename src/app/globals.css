@@ -6,7 +6,7 @@
   --color-brand-accent: #fb6a10;
   --color-brand-secondary: #f9ae80;
   --color-brand-highlight: #fa8a42;
-  --color-brand-cream: #fef5ef;
+  --color-brand-cream: #1a1a1a;
 
   --font-heading: "Oswald", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -19,7 +19,7 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-brand-cream);
-  color: var(--color-brand-dark);
+  color: #e0e0e0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-brand-light);
+  background: #111;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-brand-accent);

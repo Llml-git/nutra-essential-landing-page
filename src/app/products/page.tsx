@@ -50,9 +50,9 @@ function ProductsContent() {
   });
 
   return (
-    <section className="min-h-screen bg-brand-cream">
+    <section className="min-h-screen bg-[#1a1a1a]">
       {/* Page header */}
-      <div className="relative bg-[#2c2c2c] pt-32 pb-24 overflow-hidden">
+      <div className="relative bg-[#111111] pt-32 pb-24 overflow-hidden">
         {/* Background image */}
         <Image
           src="/images/hero/products-bg.png"
@@ -62,7 +62,7 @@ function ProductsContent() {
           className="object-cover opacity-50"
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2c2c2c]/30 via-[#2c2c2c]/50 to-[#2c2c2c]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#111]/30 via-[#111]/50 to-[#111]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
             {t("productsPageTitle")}
@@ -129,7 +129,7 @@ function ProductsContent() {
         </div>
 
         {filtered.length === 0 && (
-          <div className="text-center py-20 text-[#2c2c2c]/40">
+          <div className="text-center py-20 text-white/40">
             <p className="text-xl font-[family-name:var(--font-heading)]">
               {lang === "pt"
                 ? "Nenhum produto encontrado."

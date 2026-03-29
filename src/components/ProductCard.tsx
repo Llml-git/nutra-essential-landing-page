@@ -20,7 +20,7 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
 
   return (
     <div
-      className={`group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer animate-fade-in-up`}
+      className={`group relative bg-[#242424] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer animate-fade-in-up border border-white/10`}
       style={{ animationDelay: `${index * 100}ms` }}
       onClick={() => onSelect(product)}
     >
@@ -73,10 +73,10 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
             {t("anvisaBadge")}
           </div>
         )}
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-[#2c2c2c] mb-2 leading-tight group-hover:text-[#fb6a10] transition-colors">
+        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-white mb-2 leading-tight group-hover:text-[#fb6a10] transition-colors">
           {product.name[lang]}
         </h3>
-        <p className="text-[#2c2c2c]/50 text-sm mb-4 line-clamp-2">
+        <p className="text-white/50 text-sm mb-4 line-clamp-2">
           {product.shortBenefit[lang]}
         </p>
 
@@ -93,7 +93,7 @@ export default function ProductCard({ product, onSelect, index = 0 }: ProductCar
         </div>
 
         {/* CTA */}
-        <button className="w-full flex items-center justify-center gap-2 bg-[#2c2c2c] hover:bg-[#fb6a10] text-white font-bold py-3 rounded-xl transition-all duration-300 text-sm">
+        <button className="w-full flex items-center justify-center gap-2 bg-[#fb6a10] hover:bg-[#fa8a42] text-white font-bold py-3 rounded-xl transition-all duration-300 text-sm">
           <Eye size={16} />
           {t("viewDetails")}
         </button>

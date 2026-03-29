@@ -56,7 +56,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
       {/* Modal */}
       <div
-        className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-fade-in-up"
+        className="relative bg-[#1e1e1e] rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-fade-in-up border border-white/10"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
@@ -116,7 +116,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   </span>
                 ))}
               </div>
-              <h2 className="font-[family-name:var(--font-heading)] text-2xl sm:text-3xl font-bold text-[#2c2c2c] mb-3 leading-tight">
+              <h2 className="font-[family-name:var(--font-heading)] text-2xl sm:text-3xl font-bold text-white mb-3 leading-tight">
                 {product.name[lang]}
               </h2>
               {product.anvisaRegistered && (
@@ -132,14 +132,14 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         {/* Content */}
         <div className="p-8 space-y-8">
           {/* Description */}
-          <p className="text-[#2c2c2c]/70 text-base leading-relaxed">
+          <p className="text-white/70 text-base leading-relaxed">
             {product.description[lang]}
           </p>
 
           {/* Flavors (only if product has them) */}
           {product.flavors && (
             <div>
-              <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+              <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
                 <Palette size={20} className="text-[#fb6a10]" />
                 {t("modalFlavors")}
               </h3>
@@ -158,7 +158,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Benefits */}
           <div>
-            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
               <Sparkles size={20} className="text-[#fb6a10]" />
               {t("modalBenefits")}
             </h3>
@@ -166,7 +166,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.benefits[lang].map((benefit) => (
                 <div key={benefit} className="flex items-start gap-2">
                   <CheckCircle size={16} className="text-green-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#2c2c2c]/70">{benefit}</span>
+                  <span className="text-sm text-white/70">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -174,7 +174,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Ingredients */}
           <div>
-            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
               <Beaker size={20} className="text-[#fb6a10]" />
               {t("modalIngredients")}
             </h3>
@@ -182,7 +182,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.ingredients.map((ing) => (
                 <span
                   key={ing}
-                  className="bg-gray-100 text-[#2c2c2c]/70 text-sm px-3 py-1.5 rounded-lg"
+                  className="bg-white/10 text-white/70 text-sm px-3 py-1.5 rounded-lg"
                 >
                   {ing}
                 </span>
@@ -192,22 +192,22 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Usage */}
           <div>
-            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
               <BookOpen size={20} className="text-[#fb6a10]" />
               {t("modalUsage")}
             </h3>
-            <p className="text-sm text-[#2c2c2c]/70 bg-[#fb6a10]/5 border border-[#fb6a10]/10 rounded-xl p-4">
+            <p className="text-sm text-white/70 bg-[#fb6a10]/5 border border-[#fb6a10]/10 rounded-xl p-4">
               {product.usage[lang]}
             </p>
           </div>
 
           {/* Warnings */}
           <div>
-            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+            <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
               <AlertTriangle size={20} className="text-amber-500" />
               {t("modalWarnings")}
             </h3>
-            <p className="text-sm text-[#2c2c2c]/60 bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <p className="text-sm text-white/60 bg-amber-500/10 border border-amber-500/20 rounded-xl p-4">
               {product.warnings[lang]}
             </p>
           </div>
@@ -215,13 +215,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Nutritional Info */}
           {product.nutritionalInfo && (
             <div>
-              <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+              <h3 className="flex items-center gap-2 font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
                 <ClipboardList size={20} className="text-[#fb6a10]" />
                 {t("modalNutrition")}
               </h3>
-              <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <div className="border border-white/10 rounded-xl overflow-hidden">
                 {/* Header info */}
-                <div className="bg-gray-50 px-4 py-3 text-sm text-[#2c2c2c]/70 space-y-1">
+                <div className="bg-white/5 px-4 py-3 text-sm text-white/70 space-y-1">
                   <p><span className="font-semibold">{t("modalNutritionServings")}:</span> {product.nutritionalInfo.servingsPerContainer}</p>
                   <p><span className="font-semibold">{t("modalNutritionServing")}:</span> {product.nutritionalInfo.servingSize}</p>
                 </div>
@@ -236,19 +236,19 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   </thead>
                   <tbody>
                     {product.nutritionalInfo.rows.map((row, i) => (
-                      <tr key={row.nutrient} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="px-4 py-2 text-[#2c2c2c]/70">{row.nutrient}</td>
-                        <td className="px-4 py-2 text-right text-[#2c2c2c]/70 font-medium">{row.amount}</td>
-                        <td className="px-4 py-2 text-right text-[#2c2c2c]/50">{row.vd || "—"}</td>
+                      <tr key={row.nutrient} className={i % 2 === 0 ? "bg-white/5" : "bg-white/[0.02]"}>
+                        <td className="px-4 py-2 text-white/70">{row.nutrient}</td>
+                        <td className="px-4 py-2 text-right text-white/70 font-medium">{row.amount}</td>
+                        <td className="px-4 py-2 text-right text-white/50">{row.vd || "—"}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
                 {/* Note */}
                 {product.nutritionalInfo.note && (
-                  <div className="px-4 py-3 bg-gray-50 border-t border-gray-200">
-                    <p className="text-xs text-[#2c2c2c]/50">{product.nutritionalInfo.note}</p>
-                    <p className="text-xs text-[#2c2c2c]/40 mt-1">{t("modalNutritionFootnote")}</p>
+                  <div className="px-4 py-3 bg-white/5 border-t border-white/10">
+                    <p className="text-xs text-white/50">{product.nutritionalInfo.note}</p>
+                    <p className="text-xs text-white/40 mt-1">{t("modalNutritionFootnote")}</p>
                   </div>
                 )}
               </div>
@@ -257,7 +257,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Buy Links */}
           <div>
-            <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#2c2c2c] mb-4">
+            <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-white mb-4">
               {t("modalBuyNow")}
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
@@ -267,7 +267,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn flex items-center gap-3 bg-gray-50 hover:bg-white border border-gray-200 hover:border-[#fb6a10]/30 text-[#2c2c2c] text-sm font-medium py-4 px-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                  className="group/btn flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#fb6a10]/30 text-white text-sm font-medium py-4 px-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <PlatformIcon platform={link.platform} size={link.platform === "Magalu" ? 48 : 36} className="transition-transform group-hover/btn:scale-110" />
                   <span className="font-medium">{link.platform}</span>

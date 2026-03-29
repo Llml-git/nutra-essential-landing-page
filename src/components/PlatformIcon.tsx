@@ -17,7 +17,7 @@ const platformColors: Record<string, string> = {
   Shopee: "#EE4D2D",
   Ultrafarma: "#00A651",
   Magalu: "#0086FF",
-  "TikTok Shop": "#000000",
+  "TikTok Shop": "#ffffff",
   Bandshop: "#E91E63",
 };
 
@@ -62,7 +62,7 @@ export default function PlatformIcon({ platform, size = 20, className = "" }: Pl
           alt={platform}
           width={size}
           height={size}
-          className="object-contain w-full h-full mix-blend-multiply"
+          className="object-contain w-full h-full brightness-110 contrast-110"
           onError={handleError}
         />
       )}

@@ -90,7 +90,7 @@ export const products: Product[] = [
     anvisaRegistered: true,
     image: "/images/products/creatina-pura.png",
     color: "#fb6a10",
-    cardBg: "#fff3eb",
+    cardBg: "#2a1f17",
     nutritionalInfo: {
       servingsPerContainer: "100",
       servingSize: "3g (1/2 dosador, conforme graduação)",
@@ -100,13 +100,13 @@ export const products: Product[] = [
       note: "Não contém quantidades significativas de valor energético, carboidratos, açúcares totais, açúcares adicionados, proteínas, gorduras totais, gorduras saturadas, gordura trans, fibras alimentares e sódio.",
     },
     buyLinks: [
+      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
       { platform: "Amazon", url: "https://www.amazon.com.br/" },
       { platform: "Mercado Livre", url: "https://www.mercadolivre.com.br/" },
       { platform: "Shopee", url: "https://shopee.com.br/" },
       { platform: "Ultrafarma", url: "https://www.ultrafarma.com.br/" },
       { platform: "Magalu", url: "https://www.magazineluiza.com.br/" },
       { platform: "TikTok Shop", url: "https://seller-br.tiktok.com/" },
-      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
     ],
   },
   {
@@ -169,7 +169,7 @@ export const products: Product[] = [
     anvisaRegistered: true,
     image: "/images/products/creabolic.png",
     color: "#3b82f6",
-    cardBg: "#ebf0ff",
+    cardBg: "#171c2a",
     nutritionalInfo: {
       servingsPerContainer: "30",
       servingSize: "10g (2 dosadores)",
@@ -189,13 +189,13 @@ export const products: Product[] = [
       note: "Não contém quantidades significativas de Gorduras totais, Gorduras saturadas, Gorduras trans e Fibras alimentares.",
     },
     buyLinks: [
+      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
       { platform: "Amazon", url: "https://www.amazon.com.br/" },
       { platform: "Mercado Livre", url: "https://www.mercadolivre.com.br/" },
       { platform: "Shopee", url: "https://shopee.com.br/" },
       { platform: "Ultrafarma", url: "https://www.ultrafarma.com.br/" },
       { platform: "Magalu", url: "https://www.magazineluiza.com.br/" },
       { platform: "TikTok Shop", url: "https://seller-br.tiktok.com/" },
-      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
     ],
   },
   {
@@ -257,7 +257,7 @@ export const products: Product[] = [
     anvisaRegistered: true,
     image: "/images/products/pre-treino.png",
     color: "#7c3aed",
-    cardBg: "#f3edff",
+    cardBg: "#1f1a2a",
     flavors: {
       pt: ["Frutas Vermelhas"],
       en: ["Red Berries"],
@@ -280,13 +280,13 @@ export const products: Product[] = [
       note: "Não contém quantidades significativas de Proteínas, Gorduras totais, Gorduras saturadas, Gorduras trans, Fibras alimentares e Sódio.",
     },
     buyLinks: [
+      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
       { platform: "Amazon", url: "https://www.amazon.com.br/" },
       { platform: "Mercado Livre", url: "https://www.mercadolivre.com.br/" },
       { platform: "Shopee", url: "https://shopee.com.br/" },
       { platform: "Ultrafarma", url: "https://www.ultrafarma.com.br/" },
       { platform: "Magalu", url: "https://www.magazineluiza.com.br/" },
       { platform: "TikTok Shop", url: "https://seller-br.tiktok.com/" },
-      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
     ],
   },
   {
@@ -356,7 +356,7 @@ export const products: Product[] = [
     anvisaRegistered: true,
     image: "/images/products/cimevitan-testo.png",
     color: "#dc2626",
-    cardBg: "#ffebeb",
+    cardBg: "#2a1717",
     nutritionalInfo: {
       servingsPerContainer: "30",
       servingSize: "1,2g (2 cápsulas)",
@@ -371,13 +371,13 @@ export const products: Product[] = [
       note: "Não contém quantidades significativas de valor energético, carboidratos, açúcares totais, açúcares adicionados, proteínas, gorduras totais, gorduras saturadas, gordura trans, fibras alimentares e sódio.",
     },
     buyLinks: [
+      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
       { platform: "Amazon", url: "https://www.amazon.com.br/" },
       { platform: "Mercado Livre", url: "https://www.mercadolivre.com.br/" },
       { platform: "Shopee", url: "https://shopee.com.br/" },
       { platform: "Ultrafarma", url: "https://www.ultrafarma.com.br/" },
       { platform: "Magalu", url: "https://www.magazineluiza.com.br/" },
       { platform: "TikTok Shop", url: "https://seller-br.tiktok.com/" },
-      { platform: "Bandshop", url: "https://www.bandshop.com.br/" },
     ],
   },
 ];

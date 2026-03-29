@@ -51,7 +51,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#2c2c2c]/95 backdrop-blur-md border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#111111]/95 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -110,7 +110,7 @@ export default function Navbar() {
 
               {/* Suggestions dropdown */}
               {searchOpen && suggestions.length > 0 && (
-                <div className="absolute top-full right-0 mt-2 w-72 bg-[#2c2c2c] border border-white/10 rounded-xl shadow-2xl overflow-hidden z-50">
+                <div className="absolute top-full right-0 mt-2 w-72 bg-[#111111] border border-white/10 rounded-xl shadow-2xl overflow-hidden z-50">
                   {suggestions.map((p) => (
                     <button
                       key={p.id}
@@ -134,7 +134,7 @@ export default function Navbar() {
               )}
 
               {searchOpen && searchQuery.trim() && suggestions.length === 0 && (
-                <div className="absolute top-full right-0 mt-2 w-72 bg-[#2c2c2c] border border-white/10 rounded-xl shadow-2xl p-4 z-50">
+                <div className="absolute top-full right-0 mt-2 w-72 bg-[#111111] border border-white/10 rounded-xl shadow-2xl p-4 z-50">
                   <p className="text-white/40 text-sm text-center">
                     {lang === "pt" ? "Nenhum produto encontrado" : lang === "en" ? "No products found" : "No se encontraron productos"}
                   </p>
@@ -175,7 +175,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#2c2c2c] border-t border-white/10 px-4 pb-4">
+        <div className="md:hidden bg-[#111111] border-t border-white/10 px-4 pb-4">
           {/* Mobile search */}
           <div className="relative py-3">
             <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />

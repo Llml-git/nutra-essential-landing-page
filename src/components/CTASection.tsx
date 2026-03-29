@@ -10,16 +10,16 @@ export default function CTASection() {
   const t = (key: string) => translations[key]?.[lang] ?? key;
 
   return (
-    <section className="py-24 bg-brand-cream relative overflow-hidden">
+    <section className="py-24 bg-[#1a1a1a] relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#fb6a10]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2c2c2c] mb-6 tracking-tight leading-tight">
+        <h2 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
           {t("ctaTitle")}
         </h2>
-        <p className="text-[#2c2c2c]/60 text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
+        <p className="text-white/60 text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
           {t("ctaSubtitle")}
         </p>
         <Link

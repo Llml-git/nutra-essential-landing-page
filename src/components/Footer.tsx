@@ -11,7 +11,7 @@ export default function Footer() {
   const t = (key: string) => translations[key]?.[lang] ?? key;
 
   return (
-    <footer id="contact" className="bg-[#2c2c2c] text-white/70">
+    <footer id="contact" className="bg-[#111111] text-white/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
